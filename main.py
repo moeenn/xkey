@@ -12,6 +12,6 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         print("ctrl+c: shutting down...")
-    except Exception as err:
-        print("error: ", err)
+    #except Exception as err:
+    #    print("error: ", err)
 		

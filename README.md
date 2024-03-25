@@ -1,5 +1,6 @@
-
 ## xkey
+Randomize and execute key-presses.
+
 
 ### Setup
 
