@@ -11,9 +11,10 @@ class Application:
         self.keyboard = Controller()
 
         while True:
-            time.sleep(self.sleep_delay)
             tab_times = random.randint(2, 6)
+            print("pressing...")
             self.switch_tabs(tab_times)
+            time.sleep(self.sleep_delay)
 
     def switch_tabs(self, times=1):
         self.keyboard.press(Key.ctrl)
