@@ -1,6 +1,7 @@
 from pynput.keyboard import Key, Controller
 import random
 import time
+from datetime import datetime
 
 
 class Application:
@@ -12,7 +13,7 @@ class Application:
 
         while True:
             tab_times = random.randint(2, 6)
-            print("pressing...")
+            print(self.now())
             self.switch_tabs(tab_times)
             time.sleep(self.sleep_delay)
 
@@ -23,3 +24,6 @@ class Application:
             self.keyboard.release(Key.tab)
 
         self.keyboard.release(Key.ctrl)
+
+    def now(self) -> str:
+        return datetime.now().strftime("%d/%m/%Y %H:%M:%S")
